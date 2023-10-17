@@ -1,3 +1,4 @@
-# [Class Project Title]
+# Figma: Hajduk story
 
-Provide a short description of your results, if applicable.
+The main section of the page "Hajduk story" made in Figma.
+The section is responsive.

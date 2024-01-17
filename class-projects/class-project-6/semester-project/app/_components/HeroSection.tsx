@@ -16,7 +16,7 @@ const images: HeroImageObject[] = [
 const HeroSection = () => (
   <section className="container flex justify-between items-center gap-10 w-screen mb-8">
     <div className="flex flex-col justify-start gap-5 max-w-xl m-auto lg:m-0">
-      <h1 className="font-playfair text-5xl text-center lg:text-left xl:text-6xl font-extrabold text-brand-blue-50 whitespace-break-spaces">
+      <h1 className="font-Arial text-5xl text-center lg:text-left xl:text-6xl font-extrabold text-brand-blue-50 whitespace-break-spaces">
         Prgava Familija
       </h1>
       <br />

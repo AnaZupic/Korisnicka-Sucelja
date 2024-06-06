@@ -8,10 +8,10 @@ Link: https://korisnicka-sucelja-mvas.vercel.app
 - CSS
 - HTML
 - Contentful CMS
-## Installing and runnging the app
+## Installing and running the app
 - run "npm install" to install all necessary packages
 - run "npm run dev" to start the app
-## Atuhors
+## Auhors
 - Lucijana Puača
 - Ana Marija Župić
 

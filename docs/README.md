@@ -11,7 +11,7 @@ Link: https://korisnicka-sucelja-mvas.vercel.app
 ## Installing and running the app
 - run "npm install" to install all necessary packages
 - run "npm run dev" to start the app
-## Auhors
+## Authors
 - Lucijana Puača
 - Ana Marija Župić
 

@@ -14,11 +14,11 @@ export const metadata = {
 //     [key: string]: string | string[] | undefined;
 //   };
 // };
-
+*/
 export type SearchParams = {
   searchParams: Record<string, string | string[] | undefined>;
 };
-
+/*
 export type Post = {
   userId: number;
   id: number;

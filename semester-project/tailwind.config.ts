@@ -26,8 +26,15 @@ const config: Config = {
           900: "#4C4E52",
         },
       },
+      height: {
+        '64': '16rem',  // 256px
+        '80': '20rem',  // 320px
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 };
+
 export default config;

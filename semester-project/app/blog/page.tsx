@@ -25,11 +25,11 @@ export type Post = {
   title: string;
   body: string;
 };
-
+*/
 export type PageProps = {
   page: number;
   limit?: number;
-}; */
+}; 
 
 export type PaginationProps = {
   first?: PageProps;

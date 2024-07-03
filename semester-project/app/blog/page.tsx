@@ -29,7 +29,7 @@ export type Post = {
 export type PageProps = {
   page: number;
   limit?: number;
-};
+}; */
 
 export type PaginationProps = {
   first?: PageProps;
@@ -37,7 +37,7 @@ export type PaginationProps = {
   next?: PageProps;
   last?: PageProps;
 };
-
+/*
 export default async function Blog({ searchParams }: SearchParams) {
   const { page, limit } = parseSearchParams({ searchParams });
   const { posts, pagination } = await getPosts({ page, limit });

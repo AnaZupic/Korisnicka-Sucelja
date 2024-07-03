@@ -1,24 +1,30 @@
-import { getPost } from "@/app/blog/lib/api";
+import { getPosts } from "@/app/blog/lib/api";
+import { Post } from "../page";
 
 type Params = {
   postId: string;
 };
 
-export async function generateMetadata({ params }: { params: Params }) {
-  return {
-    title: `Post ${params.postId}`,
-  };
-}
+let localPosts: Post[] = [];
 
 export default async function BlogPost({ params }: { params: Params }) {
-  const post = await getPost(params.postId);
+  if (localPosts.length === 0) {
+    localPosts = await getPosts();
+  }
+
+  const postId = Number(params.postId);
+  const post = localPosts.find((p) => p.id === postId);
+
+  if (!post) {
+    return <div>Post not found!</div>;
+  }
 
   return (
     <main className="flex flex-col items-center min-h-screen max-w-5xl m-auto p-10">
       <h1 className="text-3xl font-bold p-10 capitalize">
         <span className="text-neutral-400">Post {post.id}:</span> {post.title}
       </h1>
-      <p className="text-xl p-10">{post.body}</p>
+      <div dangerouslySetInnerHTML={{ __html: post.content2 }} className="prose" />
     </main>
   );
 }

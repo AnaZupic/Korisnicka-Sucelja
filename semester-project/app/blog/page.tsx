@@ -1,4 +1,5 @@
-import Link from "next/link";
+import BlogPostCard from "@/app/blog/components/BlogPostCard";
+/* import Link from "next/link";
 import Pagination from "@/app/blog/components/Pagination";
 import BlogPostCard from "@/app/blog/components/BlogPostCard";
 import { getPosts } from "@/app/blog/lib/api";
@@ -59,3 +60,42 @@ export default async function Blog({ searchParams }: SearchParams) {
     </main>
   );
 }
+ */
+import {getPosts} from "./lib/api";
+import Link from "next/link";
+
+
+export type Post = {
+  id : number;
+  title: string;
+  date : string;
+  content2 : string;
+  picture :  {
+    url : string;
+  };
+  author : string;
+};
+
+const BlogPosts = async ({ post }: { post: Post }) => {
+
+  const posts= await getPosts();
+  
+ 
+  
+  return (
+    <main className="flex flex-col items-center min-h-screen max-w-7xl mx-auto p-10">
+      <h1 className="text-5xl font-bold mb-8 text-brand-blue-50 font-playfair">Blog Page</h1> 
+      <ul className="grid md:grid-cols-2 lg:grid-cols-2 gap-12 mt-8"> 
+        {posts.map((post) => (
+          <li key={post.id}>
+            <Link href={`blog/${post.id}`}>
+              <BlogPostCard post={post} />
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </main>
+  );
+};
+
+export default BlogPosts;

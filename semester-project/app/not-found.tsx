@@ -1,5 +1,3 @@
-
-
 const NotFoundPage = () => {
   return (
     <section className="container mx-auto my-8 lg:my-2 px-4 lg:px-0 max-w-screen-lg">

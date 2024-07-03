@@ -18,7 +18,7 @@ const pages: Page[] = [
   { href: "/blog", title: "Blog" },
   { href: "/contact", title: "Contact Us" },
   { href: "/about", title: "About" },
-  { href: "/test", title: "Test" },
+  { href: "/test", title: "Login" },
 ];
 
 const NavBar = () => {

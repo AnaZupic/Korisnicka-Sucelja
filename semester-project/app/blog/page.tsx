@@ -76,15 +76,6 @@ export type Post = {
   author : string;
 };
 
-<<<<<<< HEAD
-const BlogPosts = async () => {
-  const posts: Post[] = await getPosts(); // Ensure getPosts returns a list of Post
-
-  return (
-    <main className="flex flex-col items-center min-h-screen max-w-7xl mx-auto p-10">
-      <h1 className="text-5xl font-bold mb-8 text-brand-blue-50 font-playfair">Blog Page</h1>
-      <ul className="grid md:grid-cols-2 lg:grid-cols-2 gap-12 mt-8">
-=======
 const BlogPosts = async () => {
   const posts: Post[] = await getPosts(); // Ensure getPosts returns a list of Post
 

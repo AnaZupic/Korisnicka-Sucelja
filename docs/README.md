@@ -1,7 +1,7 @@
 # Hajduk Story
 Hajduk Story is a web app about football club Hajduk. 
 ## View the app
-Link: [hajduk-story-a761c31fb-ana-marija-zupics-projects.vercel.app](https://hajduk-story-a761c31fb-ana-marija-zupics-projects.vercel.app/)
+Link: [[hajduk-story-a761c31fb-ana-marija-zupics-projects.vercel.app](https://hajduk-story-a761c31fb-ana-marija-zupics-projects.vercel.app/)](https://hajduk-story-project.vercel.app/)
 ## Technologies and programming languages
 - React
 - TypeScript

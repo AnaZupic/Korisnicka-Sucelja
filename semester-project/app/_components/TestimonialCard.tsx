@@ -28,9 +28,9 @@ const TestimonialCard = ({
         <p className="font-roboto text-brand-grey-900 leading-6">{body}</p>
       </div>
       <div className="flex justify-between items-center">
-        <Button blue className="text-sm px-4 py-2" iconClassName="w-3 h-3">
+{/*         <Button blue className="text-sm px-4 py-2" iconClassName="w-3 h-3">
           Read more
-        </Button>
+        </Button> */}
       </div>
     </div>
   </div>

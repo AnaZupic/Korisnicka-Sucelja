@@ -36,9 +36,9 @@ const CtaSection = () => (
         promising an exciting future for Split's football scene.
         </p>
         <p></p>
-        <Button blue className="text-base">
+{/*         <Button blue className="text-base">
           Read more
-        </Button>
+        </Button> */}
       </div>
     </section>
   </div>

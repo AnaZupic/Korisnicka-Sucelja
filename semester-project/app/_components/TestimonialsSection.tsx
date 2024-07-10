@@ -41,13 +41,13 @@ const TestimonialsSection = () => (
         <TestimonialCard key={testimonial.title} {...testimonial} />
       ))}
     </div>
-    <Button
+{/*     <Button
       blue
       className="mb-10 text-base xl:text-lg xl:px-8"
       iconClassName="xl:w-4 xl:h-4"
     >
       View players
-    </Button>
+    </Button> */}
   </section>
 );
 
